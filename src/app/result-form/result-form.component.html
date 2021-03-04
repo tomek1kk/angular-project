@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+  <h2>Enter calculation data:</h2>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Main limit</mat-label>
+    <input type="text" matInput formControlName="mainLimit" [value]="form.get('mainLimit')?.value | currency:'GBP'">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Main retation</mat-label>
+    <input type="number" matInput formControlName="mainRetention">
+  </mat-form-field>
+
+  <mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1" (change)="simpleChange($event)">Simple</mat-radio-button>
+    <mat-radio-button  value="2" (change)="simpleChange($event)">Complex</mat-radio-button>
+  </mat-radio-group>
+
+</form>
+

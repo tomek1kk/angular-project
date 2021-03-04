@@ -1,0 +1,15 @@
+form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-form-field {
+  width: 20%;
+}
+
+mat-radio-button {
+  padding: 10px;
+}
